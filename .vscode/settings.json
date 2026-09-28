@@ -11,5 +11,6 @@
         "statusBar.debuggingForeground": "#EEFDF1",
         "statusBar.noFolderBackground": "#053610",
         "statusBar.noFolderForeground": "#EEFDF1"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
