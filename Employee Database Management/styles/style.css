@@ -2,3 +2,7 @@
     max-width: 1220px;
     margin: auto;
 }
+
+.activeList{
+    background-color: #D1D5DB;
+}
