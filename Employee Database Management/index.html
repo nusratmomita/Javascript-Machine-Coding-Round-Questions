@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Managment</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/2c4593a4a7.js" crossorigin="anonymous"></script>
 </head>
 <body class="px-20 mb-20">
-    <h3 class="text-3xl font-semibold mt-10">Employee Database Management</h3>
+    <div class="flex justify-between items-center mt-10">
+        <h3 class="text-3xl font-semibold">Employee Database Management</h3>
+        <button class="bg-[#D1D5DB] text-black rounded-3xl p-3 cursor-pointer" onClick="add_new_employee_modal.showModal()">Add Employee</button>
+    </div>
     <!-- employee section starts -->
     <div class="border border-black p-3 mt-8 flex">
         <!-- left section starts -->
@@ -28,6 +32,33 @@
         <!-- right section ends-->
     </div>
     <!-- employee section ends -->
+
+    <!-- add new employee modal starts(fixed inset-0 m-auto backdrop:bg-black/50) -->
+    <dialog id="add_new_employee_modal" class="modal">
+        <div class="modal-box">
+            <h3 class="text-center text-black text-lg font-semibold mx-3 mb-8">Add New Employee</h3>
+            <form onsubmit="add_employee(event)" method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onclick="document.getElementById('add_new_employee_modal').close()">✕</button>
+                <div class="flex flex-col gap-4">
+                    <div class="flex gap-4">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" class="w-[50%] p-2 rounded-md border border-gray-300 text-md font-semibold" required>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="w-[50%] p-2 rounded-md border border-gray-300 text-md font-semibold" required>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <input id="imageUrl" type="text" name="imageUrl" placeholder="Image URL (Optional)" class="p-2 rounded-md border border-gray-300 text-md font-semibold"/>
+                        <input id="email" type="email" name="email" placeholder="Email" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                        <input id="contactNumber" type="number" name="contactNumber" placeholder="Contact" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                        <input id="salary" type="number" name="salary" placeholder="Salary" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                        <input id="address" type="text" name="address" placeholder="Address" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                        <input id="age" type="number" name="age" placeholder="Age" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                        <input id="dob" type="date" name="dob" placeholder="Date of Birth" class="p-2 rounded-md border border-gray-300 text-md font-semibold" required/>
+                    </div>
+                    <button id="add_employee_form_btn" type="submit" class="bg-[#D1D5DB] text-black rounded-3xl p-3 cursor-pointer">Submit</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <!-- add new employee modal ends -->
     <script src="./index.js"></script>
 </body>
 </html>
