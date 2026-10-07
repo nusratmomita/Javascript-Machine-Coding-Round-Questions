@@ -1,6 +1,7 @@
 let currentEmployees = [];
 
- const formatDOB = (dob) => {
+// ! used AI
+const formatDOB = (dob) => {
     if(dob.includes('/')){
         return dob;
     }
@@ -47,6 +48,7 @@ const displayingEmployeeList = (employees) => {
             <button class="cursor-pointer delete_btn"><i class="fa-regular fa-circle-xmark text-red-900"></i></button>
         `
 
+        // * two important things(listdiv. and stopPropagation())
         const deleteBtn = listDiv.querySelector(".delete_btn");
         deleteBtn.addEventListener("click" , (e) => {
             e.stopPropagation();
