@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 85vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown_title{
+    font-weight: normal;
+    padding: 10px 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.countdown_body{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.time_value{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time_name{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.time_hour, .time_minute, .time_second{
+    font-size: 30px;
+    font-weight: normal;
+    color: gray;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.time_hour::-webkit-inner-spin-button, .time_minute::-webkit-inner-spin-button, .time_second::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.time_second{
+    margin-top: 10px;
+}
+
+.time_colon{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+
+.btn_start,.btn_reset,.btn_stop{
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    width: 48%;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_reset{
+    background-color: red;
+}
+
+.btn_stop{
+    display: none;
+    background-color: orange;
+}
