@@ -4,7 +4,7 @@
 }
 
 body{
-    height: 85vh;
+    height: 95vh;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ body{
 }
 
 .countdown_body{
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     gap: 60px;
 }
@@ -61,6 +61,10 @@ body{
     margin-left: 40px;
 }
 
+.container_btns{
+    display: flex;
+    justify-content: space-between;
+}
 
 .btn_start,.btn_reset,.btn_stop{
     margin-top: 20px;
@@ -77,6 +81,7 @@ body{
 .btn_reset{
     background-color: red;
 }
+
 
 .btn_stop{
     display: none;
