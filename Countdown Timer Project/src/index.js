@@ -61,9 +61,9 @@
 
         if(totalSeconds === null) return;
 
-        let remainingSeconds = totalSeconds;
+        let remainingSeconds = totalSeconds;// is skippable
 
-        displayTime(remainingSeconds);
+        displayTime(remainingSeconds);// is skippable
 
         startBtn.style.display = "none";
         stopBtn.style.display = "initial";

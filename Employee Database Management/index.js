@@ -144,4 +144,6 @@ const handleDeleteEmployee = (id) => {
 
     displayingEmployeeList(currentEmployees);
 }
+
+
 fetchData();
