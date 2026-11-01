@@ -9,6 +9,7 @@
     let countdownTimer = null;// countdownTimer will store the ID returned by setInterval().
 
     // version 2
+    // ! used AI for betterment of the logic
     function getTotalSeconds(){
         const hours = Number(hourValue.value);
         const minutes = Number(minuteValue.value);
