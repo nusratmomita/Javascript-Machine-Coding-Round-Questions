@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcutor_div{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cal_buttons,.inputBox_clearBtn{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#input_box{
+    padding: 20px 30px;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0
+}
