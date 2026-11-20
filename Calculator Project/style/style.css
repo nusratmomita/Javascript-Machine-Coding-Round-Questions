@@ -29,6 +29,10 @@ button{
     margin-top: 10px;
 }
 
+.cal_buttons button,.inputBox_clearBtn button{
+    cursor: pointer;
+}
+
 #input_box{
     padding: 20px 30px;
 	font-size: 24px;
